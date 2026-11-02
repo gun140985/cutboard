@@ -4,7 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="브라우저에서 바로 쓰는 홍보영상·숏폼 편집기. 설치 없이 자르기, 자막, 배경음악, 전환효과, MP4 내보내기.">
-<title>컷보드 편집기</title>
+<title>컷보드 · 무료 숏폼·홍보영상 편집기</title>
+<link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="컷보드">
+<meta property="og:title" content="컷보드 · 가게 홍보 숏폼, 설치 없이 브라우저에서">
+<meta property="og:description" content="자막, 비포·애프터, 배경음악까지 넣고 MP4로 저장하는 무료 편집기">
+<meta property="og:url" content="https://gun140985.github.io/cutboard/">
+<meta property="og:image" content="https://gun140985.github.io/cutboard/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://gun140985.github.io/cutboard/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Sans+KR:wght@500;700;900&family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Nanum+Myeongjo:wght@700;800&family=Nanum+Gothic:wght@800&family=Gothic+A1:wght@900&family=Sunflower:wght@700&family=Gasoek+One&family=Bagel+Fat+One&family=Gugi&family=East+Sea+Dokdo&family=Gowun+Batang:wght@700&family=Song+Myung&family=Nanum+Brush+Script&family=Gowun+Dodum&family=Dongle:wght@700&family=Cute+Font&family=Yeon+Sung&family=Nanum+Pen+Script&family=Gaegu:wght@700&family=Hi+Melody&display=swap">
 <script>
@@ -68,6 +80,7 @@ button,input,select{font:inherit;color:inherit}
 /* header */
 .top{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding-block:12px 0}
 .brand{display:flex;align-items:baseline;gap:10px;margin-right:auto}
+.brand-mark{align-self:center;width:22px;height:22px;border-radius:5px;flex:none}
 .brand b{font-size:18px;font-weight:700;letter-spacing:-.01em}
 .brand span{color:var(--muted);font-size:12px}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel-2)}
@@ -360,7 +373,7 @@ button,input,select{font:inherit;color:inherit}
 <body>
 <div class="app" id="app">
   <header class="top">
-    <div class="brand"><b>컷보드</b><span id="projNameLab" title="작업 이름 (📁 작업 메뉴에서 바꿀 수 있어요)">새 작업</span></div>
+    <div class="brand"><img class="brand-mark" src="assets/logo-mark.svg" alt="" width="22" height="22"><b>컷보드</b><span id="projNameLab" title="작업 이름 (📁 작업 메뉴에서 바꿀 수 있어요)">새 작업</span></div>
     <div class="ctl">
       <span class="lbl">화면 비율</span>
       <div class="seg" role="group" aria-label="화면 비율">
